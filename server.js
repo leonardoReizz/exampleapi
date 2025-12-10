@@ -12,7 +12,7 @@ app.get('/api', (req, res) => {
   requestCount++;
   
   // Alterna entre 200 (ímpar) e 500 (par)
-  if (requestCount % 2 === 1) {
+  if (requestCount % 5 === 1) {
     // Requisição ímpar: retorna 200
     res.status(200).json({
       status: 200,
